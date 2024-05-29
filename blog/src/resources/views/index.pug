@@ -1,0 +1,22 @@
+.posts
+  head
+    style.
+      table, th, td {
+      border: 1px solid black;
+      }
+  table
+    thead
+      tr
+        th  {{this._id}}
+        th  {{this.name}}
+        th {{this.desciption}}
+        th {{this.image}}
+        th {{this.videoId}}
+    tbody
+    each post in posts
+      tr
+        td=  post.id
+        td=  post.name
+        td= post.description
+        td= post.image
+        td= post.videoId
